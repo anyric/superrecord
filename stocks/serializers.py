@@ -4,4 +4,4 @@ from stocks.models import Stock
 class StockSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock
-        fields = ('id', 'name', 'quantity', 'cost', 'measurement')
+        fields = ('id', 'name', 'quantity', 'cost', 'measurement','created_on','updated_on')
